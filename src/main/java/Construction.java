@@ -1,11 +1,10 @@
+package main.java;
 public class Construction
 {
-    
-    double lumber;  // price per board 
+    double lumber;  // price per board
     double windows; // price per square inch of window
-    double taxRate; 
-   
-    
+    double taxRate;
+
     public Construction(double lumberCost, double windowCost, double taxes)
     {
         lumber = lumberCost;
@@ -19,18 +18,12 @@ public class Construction
     {
         return lumber * numBoards;   
     }
-    
+
     // Computes and returns the cost of the windows
-    public double windowCost(int numWindows)
-    {
-        return windows * numWindows;   
-    }
+    public double windowCost(int numWindows) { return windows * numWindows; }
     
     // Computes the grand total by adding
     // the tax amount to the total
-    public double grandTotal(double total)
-    {
-        return total * (1 + taxRate);
-    }
-    
+    public double grandTotal(double total) { return total * (1 + taxRate); }
+
 }

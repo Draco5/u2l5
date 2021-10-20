@@ -1,3 +1,4 @@
+package main.java;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
